@@ -1,6 +1,7 @@
 package io.pivotal.shinyay
 
 import io.pivotal.shinyay.domain.addition.runAdditionServer
+import io.pivotal.shinyay.domain.subtraction.runSubtractionServer
 import io.pivotal.shinyay.registration.EurekaServer
 import io.pivotal.shinyay.registration.runEurekaServer
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -23,5 +24,6 @@ fun main(args: Array<String>) {
 	when(serverName) {
 		"eureka" -> runEurekaServer(args)
 		"addition" -> runAdditionServer(args)
+		"subtraction" -> runSubtractionServer(args)
 	}
 }
