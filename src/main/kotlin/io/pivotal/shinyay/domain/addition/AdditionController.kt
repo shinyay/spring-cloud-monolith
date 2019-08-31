@@ -13,7 +13,7 @@ class AdditionController {
     val logger: Logger = LoggerFactory.getLogger(this.javaClass.name)
 
     @RequestMapping("/")
-    fun root() = "index"
+    fun index() = "index"
 
     @RequestMapping("/add")
     @ResponseBody
