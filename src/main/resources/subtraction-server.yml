@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: subtraction-service
+  thymeleaf:
+    cache: false
+    prefix: classpath:/subtraction-server/templates/
+error:
+  path: /error
+server:
+  port: 8070
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      leaseRenewalIntervalInSeconds: 5
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
