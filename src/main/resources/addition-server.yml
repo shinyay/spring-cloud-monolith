@@ -1,8 +1,6 @@
 spring:
   application:
     name: addition-service
-  freemaker:
-    enabled: false
   thymeleaf:
     cache: false
     prefix: classpath:/addition-server/templates/
