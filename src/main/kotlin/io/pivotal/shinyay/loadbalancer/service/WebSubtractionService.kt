@@ -17,5 +17,5 @@ class WebSubtractionService {
     lateinit var restTemplate: RestTemplate
 
     fun sub(param1: String, param2: String) =
-            restTemplate.getForObject("$serviceUrl/add?param1=$param1&param2=$param2", String::class.java)
+            restTemplate.getForObject("$serviceUrl/sub?param1=$param1&param2=$param2", String::class.java)
 }
